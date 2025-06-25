@@ -12,14 +12,14 @@ The system is orchestrated via Docker Compose and includes health checks, reques
 devops-intern-assignment/
 +-- docker-compose.yml       # Defines services, networking, and health checks
 +-- nginx/
-¦   +-- nginx.conf          # Nginx reverse proxy configuration
-¦   +-- Dockerfile          # Dockerfile for Nginx
+Â¦   +-- nginx.conf          # Nginx reverse proxy configuration
+Â¦   +-- Dockerfile          # Dockerfile for Nginx
 +-- service_1/
-¦   +-- main.go             # Golang application source
-¦   +-- Dockerfile          # Dockerfile for Service 1
+Â¦   +-- main.go             # Golang application source
+Â¦   +-- Dockerfile          # Dockerfile for Service 1
 +-- service_2/
-¦   +-- app.py              # Python Flask application source
-¦   +-- Dockerfile          # Dockerfile for Service 2
+Â¦   +-- app.py              # Python Flask application source
+Â¦   +-- Dockerfile          # Dockerfile for Service 2
 +-- test.sh                 # Automated test script for endpoints
 +-- README.md               # Project documentation
 ```
@@ -44,7 +44,6 @@ devops-intern-assignment/
    ```
 3. Run the automated test script in a Bash-compatible terminal (e.g., Git Bash or WSL):
    ```bash
-   chmod +x test.sh
    ./test.sh
    ```
 4. Access services via `http://localhost:9090`.
@@ -95,3 +94,19 @@ Nginx acts as a reverse proxy, routing requests based on URL paths:
 - [x] Nginx request logging
 - [x] Automated test script (`test.sh`)
 - [x] Clean, modular project structure
+
+
+## Screenshots 
+![service 1 ping](https://github.com/user-attachments/assets/e1070e50-13ff-48f3-8acf-4b50b4822182)
+![service 1 hello](https://github.com/user-attachments/assets/1f79b1ff-3b36-481a-8a3b-5ad5becb710e)
+![service 2 ping](https://github.com/user-attachments/assets/f8f92e8d-b63f-4599-a174-189942c66b88)
+![service 2 hello](https://github.com/user-attachments/assets/eeec0f97-ef52-4a4f-9846-d98a768b2081)
+![build success](https://github.com/user-attachments/assets/6a31e995-29cf-4b4a-999a-180d0ae525de)
+![docker container](https://github.com/user-attachments/assets/00378022-8f78-413d-aa3e-56c11f86c26b)
+![test passes](https://github.com/user-attachments/assets/93d1a44a-1334-4f2a-951a-ba66c332a3c3)
+
+
+
+
+
+
